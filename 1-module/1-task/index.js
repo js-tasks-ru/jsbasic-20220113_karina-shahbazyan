@@ -1,18 +1,18 @@
-function factorial(n) {
-  if ((n == 1) || (n == 0)) {
+function factorial(number) {
+  if ((number == 1) || (number == 0)) {
     return 1;
   }
-  else if (n < 0) {
+  else if (number < 0) {
     return 0;
   }
   else{
-    let f = n;
+    let factorial = number;
     let k = 1;
-    while ( k != n){
-      f = f*(n-k);
+    while ( k != number){
+      factorial = factorial*(number-k);
       k++;
     }
-    return f;
+    return factorial;
   }
 }
 
