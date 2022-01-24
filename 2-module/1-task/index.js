@@ -1,8 +1,9 @@
 function sumSalary(salaries) {
-     if (salaries.Ann != undefined && salaries.John != undefined && salaries.Pete != undefined){
-    return salaries.John + salaries.Ann + salaries.Pete;
+  let sum = 0;
+  for (let key in salaries) {
+    if (isFinite(salaries[key])) {
+      sum += salaries[key];
+    }
   }
-  else{
-    return 0;
-  }
+  return sum;
 }
